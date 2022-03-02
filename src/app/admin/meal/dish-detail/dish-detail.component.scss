@@ -1,0 +1,28 @@
+.dishdetail {
+  &__title {
+    text-align: center;
+  }
+  &__section-content {
+    display: flex;
+    justify-content: space-around;
+
+    &__left {
+      &__img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+    &__right {
+      &__title {
+        text-align: center;
+      }
+      &__paragraph {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+  }
+  &__section-video {
+    text-align: center;
+  }
+}

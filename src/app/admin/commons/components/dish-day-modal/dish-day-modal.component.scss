@@ -1,0 +1,13 @@
+.dishday {
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

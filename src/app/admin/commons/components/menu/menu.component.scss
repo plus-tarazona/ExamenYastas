@@ -1,0 +1,11 @@
+.menu {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+  &__buttons {
+    color: white;
+  }
+}

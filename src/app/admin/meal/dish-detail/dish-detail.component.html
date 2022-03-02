@@ -1,0 +1,26 @@
+<div class="dishdetail">
+  <h1 class="dishdetail__title">{{ dish?.strMeal }}</h1>
+  <div class="dishdetail__section-content">
+    <div class="dishdetail__section-content__left">
+      <img [src]="dish?.strMealThumb" class="dishdetail__section-content__left__img"/>
+    </div>
+    <div class="dishdetail__section-content__right">
+      <h3 class="dishdetail__section-content__right__title">Instrucciones</h3>
+      <p class="dishdetail__section-content__right__paragraph">{{ dish?.strInstructions }}</p>
+    </div>
+  </div>
+  <div class="dishdetail__section-video">
+    <h3>Video de preparación</h3>
+    <!-- <iframe width="560" height="315" src="dish?.strYoutube" allowfullscreen>
+    </iframe> -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/mmVdkls0nQU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>

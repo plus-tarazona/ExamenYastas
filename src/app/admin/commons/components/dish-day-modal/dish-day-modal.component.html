@@ -1,0 +1,11 @@
+<h1 mat-dialog-title class="dishday__title">Platillo del día</h1>
+<h3 mat-dialog-title class="dishday__title">{{data.strMeal}}</h3>
+<div mat-dialog-content>
+    <div class="dishday__content">
+        <img [src]="data.strMealThumb" height="400">
+    </div>
+</div>
+<div mat-dialog-actions class="dishday__buttons">
+  <button mat-button mat-dialog-close>Cerrar</button>
+  <button mat-raised-button (click)="seeMore()">Ver más</button>
+</div>

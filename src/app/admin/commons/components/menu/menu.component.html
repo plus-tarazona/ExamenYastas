@@ -1,0 +1,24 @@
+<!-- <div class="menu">
+  <mat-nav-list>
+    <mat-list-item 
+      *ngFor="let opt of optionList"
+      [routerLink]="opt.url"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class=""
+      (click)="optionSelectedHandler()">
+    </mat-list-item>
+  </mat-nav-list>
+</div> -->
+<div class="menu">
+  <button 
+    mat-button
+    *ngFor="let opt of optionList"
+    [routerLink]="opt.url"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="menu__buttons"
+    (click)="optionSelectedHandler()">
+    {{opt.label}}
+  </button>
+</div>
