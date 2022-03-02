@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { AdminServicesModule } from '../../services/services.module';
 import {MatButtonModule} from '@angular/material/button';
+import { YtsSessionModule } from 'src/app/commons/services';
 
 const ANGULAR_MODULES = [
   CommonModule,
@@ -21,7 +22,8 @@ const COMPONENTS = [
 ];
 
 const LIB_MODULES = [
-  AdminServicesModule
+  AdminServicesModule,
+  YtsSessionModule
 ]
 
 @NgModule({

@@ -9,10 +9,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
-import { YtsSweetAlertModule } from '../commons/services';
+import { YtsSessionModule, YtsSweetAlertModule } from '../commons/services';
 
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { PortalHttpModule } from './commons/http/http.module';
 
 const ANGULAR_MODULES = [
   CommonModule,
@@ -25,11 +27,14 @@ const MATERIAL_MODULES = [
   MatInputModule,
   MatIconModule,
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
+  MatCheckboxModule
 ];
 
 const LIB_MODULES = [
-  YtsSweetAlertModule
+  YtsSweetAlertModule,
+  YtsSessionModule,
+  PortalHttpModule
 ];
 
 const COMPONENTS = [

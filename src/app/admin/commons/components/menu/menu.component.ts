@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { YtsSessionService } from 'src/app/commons/services';
 import { IMenu } from '../../interfaces/menu.interface';
 import { MenuService } from '../../services/menu.service';
 
@@ -10,7 +12,11 @@ import { MenuService } from '../../services/menu.service';
 export class MenuComponent implements OnInit {
   optionList: IMenu[];
 
-  constructor(private menuService: MenuService) {
+  constructor(
+    private menuService: MenuService,
+    private sessionService: YtsSessionService,
+    private router: Router,
+  ) {
     this.optionList = [
       { label: 'Bienvenida', url: '/admin' },
       { label: 'Ingredientes populares', url: 'meal/popular-ingredients' },
@@ -24,6 +30,11 @@ export class MenuComponent implements OnInit {
 
   optionSelectedHandler(): void {
     this.menuService.optionSelected.next();
+  }
+
+  signOff(): void {
+    this.sessionService.signOff();
+    this.router.navigateByUrl('/');
   }
 
 }
