@@ -24,7 +24,7 @@ const COMPONENTS = [
 const LIB_MODULES = [
   AdminServicesModule,
   YtsSessionModule
-]
+];
 
 @NgModule({
   declarations: [...COMPONENTS],
